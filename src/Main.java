@@ -38,7 +38,7 @@ public class Main {
         // вывести в консоль результат в формате: «Средняя сумма трат за месяц составила … рублей».
         //** результат может иметь остаток.
         double average;
-        average = sumMonth / arr.length;
+        average = (double) sumMonth / (double)arr.length;
         System.out.println("Средняя сумма трат за месяц  составила: " + average + " рублей.");
 
         //Задача 4:
@@ -53,7 +53,7 @@ public class Main {
         // Необходимо корректно пройти по массиву циклом и распечатать его элементы в правильном порядке.
 
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int g = reverseFullName.length - 1; g >= 0; --g){
+        for (int g = reverseFullName.length - 1; g >= 0 && reverseFullName[0] != 'I'; --g){
             System.out.print(reverseFullName[g]);
         }
     }
